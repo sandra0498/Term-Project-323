@@ -15,8 +15,8 @@ ShiftEndTime time NOT NULL,
 CONSTRAINT shiftType_pk PRIMARY KEY(ShiftType)
 );
 
--- a little confused on shift since it has so many migrating foreign keys 
-    -- so i did not finish the table's first two foreign keys 
+--***** a little confused on shift since it has so many migrating foreign keys 
+    -- so i did not finish the table's first two foreign keys *****
 CREATE TABLE Shift(
 ShiftType varchar(50) NOT NULL,
 ShiftDate date NOT NULL,
