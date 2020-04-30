@@ -24,9 +24,9 @@ ManagerID int NOT NULL,
 HeadChefID int NOT NULL
 CONSTRAINT Shift_pk PRIMARY KEY(ShiftType, ShiftDate),
 CONSTRAINT Shift_fk FOREIGN KEY(HeadChefID, ShiftType, ShiftDate)
-references 
+references Attendance (StaffID, ShiftType, ShiftDate),
 CONSTRAINT Shift_fk01 FOREIGN KEY(ManagerID, ShiftType, ShiftDate)
-references 
+references Attendance  (StaffID, ShiftType, ShiftDate),
 CONSTRAINT Shift_fk02 FOREIGN KEY(ShiftType) references ShiftType (ShiftType),
 CONSTRAINT Shift_fk03 FOREIGN KEY(HeadChefID) references HEADCHEF (HeadChefID),
 CONSTRAINT Shift_fk04 FOREIGN KEY(ManagerID) references Manager (ManagerID)
