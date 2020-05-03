@@ -82,56 +82,53 @@ INSERT INTO INSURANCE (InsuranceID, InsuranceName, InsurancePhoneNumber) values
 (89630, 'Delta Dental', '18003231743');
 
 
--- CANNOT POPULATE THE TABLE UNTIL I HAVE THE STAFF TABLE POPULATED 
+
 INSERT INTO STAFFINSURANCE (StaffID, InsuranceID) values
-( 100118 ,63632),
-(100112 , 63632),
+-- Instances of life insurance policies
 (100106 , 57574),
 (100102 , 57574),
-(100114, 63632),
-(100117,01583),
-(100111, 01583),
-(100109, 01583),
+(100105, 63632),
+-- instances of disability insurance policies 
+(100104, 01583),
 (100105, 01583),
+-- instances of medical insurance policies
 (100103 , 33270),
 (100106, 55458),
-(100118, 55458),
-(100112, 33270),
 (100102, 55458),
-(100114, 33270),
+(100107, 33270),
+(100104, 55458),
 (100108, 33270),
+-- instances of dental insurance policies
 (100106, 89630),
-(100112, 51347),
-(100118, 89630);
+ (100101, 51347), 
+ (100109, 89630),
+ (100107, 89630);
+
 
 
 INSERT INTO LifeInsurance (StaffID, InsuranceID, DeathBenefitAmount) values 
-( 100118 ,63632, 200125.65 ),
-(100112 , 63632, 345877.90 ),
 (100106 , 57574, 10000.57 ), 
-( 100102 , 57574, 300000.60 ),
-(100114, 63632, 250000.00 );
+(100102, 57574, 300000.60 ),
+(100105, 63632, 250000.00 );
 
 
 
 INSERT INTO DisabilityInsurance (StaffID, InsuranceID, DisabilityAmount, WeekNumber, MaxWeekPay) values 
-(100117,01583, 650.00, 10, 12),
-(100111, 01583, 500.00, 07, 05 ),
-(100109, 01583, 400.00, 15, 05),
+(100104, 01583, 400.00, 15, 05),
 (100105, 01583, 500.00, 03, 04);
 
 
 INSERT INTO MedicalInsurance(StaffID, InsuranceID, EmergencyRoomPay, DoctorVisitPay) values 
 ( 100103 , 33270, 700.00, 500.00),
 (100106, 55458, 750.00, 600.00),
-(100118, 55458, 750.00, 600.00),
-(100112, 33270, 700.00, 500.00),
 (100102, 55458, 750.00, 600.00),
-(100114, 33270, 700.00, 500.00),
+(100107, 33270, 700.00,  500.00),
+(100104, 55458, 750.00, 600.00),
 (100108, 33270, 700.00, 500.00);
 
 
 INSERT INTO DentalInsurance(StaffID, InsuranceID, DentalAmount) values 
 (100106, 89630, 450.00), 
-(100112, 51347, 500.00),
-(100118, 89630, 450.00) ;
+(100101, 51347, 400.00),
+(100109, 89630, 450.00),
+(100107, 89630, 450.00);
