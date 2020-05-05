@@ -14,12 +14,34 @@ inner join FOODITEMS f on m.foodItemName = f.foodItemName;
 
 
 create view Customer_addresses_v as 
-select customerFirstName, customerLastName 
-from CUSTOMER c
-inner join MIMINGSACCOUNT m on m.customerID = c.customerID
-inner join ACCOUNTTYPE a on m.accountTypeID = a.accountTypeID;
+select customerFirstName, customerLastName , accounttype,
+case accounttype
+when accountnumber in (select accountNumber from PERSONALACCOUNT )
+then 'Individual'
+when accountNumber in (select accountNumber from CORPORATIONACCOUNT)
+then 'Corporate'
+end as typeofaccount
+from CUSTOMER 
+inner join MIMINGSACCOUNT using (accountNumber);
 
 
 
 create view Sous_mentor_v as 
-select * from SousChefMentorship 
+select * from SousChefMentorship ;
+
+
+-- List each customer and the total $ amount of their orders
+--  for the past year (365 days), in order of the value of customer orders,
+--  from highest to the lowest.
+create view Customer_Value_v as 
+select customerFirstName, customerLastName, sum(count(orderID) * quantity ) as total 
+from customers 
+natural join KNOWNCUSTOMER 
+natural join PAYMENT 
+natural join ORDERS 
+natural join ORDERITEMS
+having year(orderDate) = 2019
+order by total desc;  
+
+
+
