@@ -30,6 +30,18 @@ create view Sous_mentor_v as
 select * from SousChefMentorship ;
 
 
+
+
+
+create view Customer_Sales_v as 
+select customerID, sum(originalAmount * quantity) as amountSpent
+from customers 
+natural join KNOWNCUSTOMER
+natural join PAYMENT 
+natural join ORDERS 
+natural join ORDERITEMS;
+
+
 -- List each customer and the total $ amount of their orders
 --  for the past year (365 days), in order of the value of customer orders,
 --  from highest to the lowest.
@@ -42,8 +54,6 @@ natural join ORDERS
 natural join ORDERITEMS
 having year(orderDate) = 2019
 order by total desc;  
-
-
 
 
 
