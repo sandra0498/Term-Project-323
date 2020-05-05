@@ -22,7 +22,7 @@ when accountNumber in (select accountNumber from CORPORATIONACCOUNT)
 then 'Corporate'
 end as typeofaccount
 from CUSTOMER 
-inner join MIMINGSACCOUNT using (accountNumber);
+natural join MIMINGSACCOUNT;
 
 
 
@@ -42,6 +42,8 @@ natural join ORDERS
 natural join ORDERITEMS
 having year(orderDate) = 2019
 order by total desc;  
+
+
 
 
 
