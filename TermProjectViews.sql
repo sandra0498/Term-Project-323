@@ -27,7 +27,15 @@ natural join MIMINGSACCOUNT;
 
 
 create view Sous_mentor_v as 
-select * from SousChefMentorship ;
+select  sousChefID as "mentee", 
+sousChefMentorID as  "Mentor", 
+foodItemName as "skillPassed",
+startDate as "StartDate"
+from SOUSCHEFMENTORSHIP
+natural join SOUSCHEFSPECIALTY;
+
+
+
 
 
 
