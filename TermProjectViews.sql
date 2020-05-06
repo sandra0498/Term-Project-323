@@ -14,15 +14,13 @@ inner join FOODITEMS f on m.foodItemName = f.foodItemName;
 
 
 create view Customer_addresses_v as 
-select customerFirstName, customerLastName , accounttype,
-case accounttype
-when accountnumber in (select accountNumber from PERSONALACCOUNT )
-then 'Individual'
-when accountNumber in (select accountNumber from CORPORATIONACCOUNT)
-then 'Corporate'
-end as typeofaccount
-from CUSTOMER 
-natural join MIMINGSACCOUNT;
+select cust.customerID, cust.customerFirstName, cust.customerLastName,
+if( MA.accountNumber = CA.accountNumber, 'Corporate', 'Personal') as typeOfAccount
+from CUSTOMER cust
+inner join MIMINGSACCOUNT MA on MA.customerID = cust.customerID
+inner join CORPORATIONACCOUNT CA on MA.accountNumber = CA.accountNumber
+inner join PERSONALACCOUNT PA on MA.accountNumber = PA.accountNumber ;
+
 
 
 
