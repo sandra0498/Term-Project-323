@@ -119,7 +119,21 @@ INSERT INTO PAYMENTWITHCARD (orderID, cardholderFirstName,  cardholderLastName, 
 (30,'Roland', 'Keitel', 0007),
 
 
-
+(56,'Susan', 'Nelson', 0005),
+(57,'Zbyszek', 'Piestrzeniewicz', 0006),
+(58,'Roland', 'Keitel', 0007),
+(59, 'Julie', 'Murphy', 0008),
+(60,'Kwai', 'Lee', 0009)),
+(61,'Diego', 'Freyre', 1000 ),
+(62,'Christina', 'Berglund', 1001),
+(63,'Jytte', 'Petersen', 1002),
+(64,'Mary', 'Saveley', 1003),
+(65,'Jeff', 'Young', 1004),
+(66,'Juri', 'Hashimoto', 1005),
+(67,'Veysel', 'Oeztan', 1006),
+(68,'Schmitt', 'Carine', 0000),
+(69,'Janine', 'Labrune',0003 ),
+(70,'Jonas', 'Bergulfsen', 0004),
 
 
 
