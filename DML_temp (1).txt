@@ -2031,7 +2031,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (48, 30.00, 30.00),
 (49, 5.00, 5.00),
 (50, 15.00, 15.00),
-(51, 5.00, 5.00), --recent change 
+(51, 5.00, 5.00), --removed discount 
 (52, 45.00, 45.00),
 (53, 15.00, 15.00),
 (54, 45.00, 45.00),
@@ -2113,7 +2113,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (130, 10.00, 10.00),
 (131, 10.00, 10.00),
 (132, 20.00, 20.00),
-(133, 20.00, 16.00),
+(133, 20.00, 20.00), --removed discount 
 (134, 10.00, 10.00),
 (135, 10.00, 10.00),
 (136, 15.00, 15.00),
@@ -2152,7 +2152,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (169, 15.00, 15.00),
 (170, 15.00, 15.00),
 (171, 5.00, 5.00),
-(172, 45.00, 34.00),
+(172, 45.00, 45.00), --removed discount
 (173, 15.00, 15.00),
 (174, 45.00, 45.00),
 (175, 15.00, 15.00),
@@ -2192,7 +2192,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (209, 30.00, 30.00),
 (210,15.00 , 15.00),
 (211, 8.00, 8.00),
-(212, 16.00, 12.80),
+(212, 16.00, 16.00), --removed the discount 
 (213, 8.00, 8.00),
 (214, 10.00, 10.00),
 (215,20.00 , 20.00),
