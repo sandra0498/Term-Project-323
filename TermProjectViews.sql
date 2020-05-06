@@ -35,7 +35,7 @@ natural join SOUSCHEFSPECIALTY;
 
 
 
-
+--This one runs 
 create view Customer_Sales_v as 
 select customerID, sum(originalAmount * quantity) as amountSpent
 from CUSTOMER 
