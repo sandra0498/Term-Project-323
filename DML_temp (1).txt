@@ -656,7 +656,7 @@ INSERT INTO PERSONALACCOUNT (accountNumber, address, zipCode, emailAddress, birt
 (2, '5677 Strong St.', 92619, 'King@gmail.com', '1993-10-02', 'Null'),
 (3, 'Erling Skakkes gate 78', 92620, 'Peter@gmail.com', '1992-01-04', 'Null'),
 (4, '5557 North Pendale Street', 92621, 'Janine@gmail.com', '1995-02-07', 'Null'),
-(6, 'Berguvsvägen  8', 92622, 'Susan@gmail.com', '1990-05-10', 'Null'),
+(6, 'BerguvsvÃ¤gen  8', 92622, 'Susan@gmail.com', '1990-05-10', 'Null'),
 (7, '7586 Pompton St.', 92623, 'zbyszek@gmail.com', '1998-03-14', 'Null'),
 (9, '149 Spinnaker Dr.', 92624, 'Julie@gmail.com', '1988-04-24', 'Null'),
 (11, '265, boulevard Charonne', 92789, 'Diego@gmail.com', '1980-07-04', 'Null'),
@@ -1098,7 +1098,7 @@ Insert into LINECOOK (lineCookID) values
 
 
 
-insert into SOUSCHEFSPECIALTY (sousChefID, foodItemName) values
+insert into SOUSCHEFSPECIALITY (sousChefID, foodItemName) values
 (6, 'Egg Roll'),
 (11, 'Spring Roll'),
 (13, 'Lettuce Wraps'),
@@ -1147,7 +1147,7 @@ INSERT INTO STATION (StationName) values
 ('Pantry Station'),
 ('Pastry Station'),
 ('Roast Station'), 
-('Saut� Station'), 
+('Sauté Station'), 
 ('Vegetable Station');
 
 
