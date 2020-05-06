@@ -13,6 +13,7 @@ from MENUITEMS m
 inner join FOODITEMS f on m.foodItemName = f.foodItemName; 
 
 
+--This one runs 
 create view Customer_addresses_v as 
 select cust.customerID, cust.customerFirstName, cust.customerLastName,
 if( MA.accountNumber = CA.accountNumber, 'Corporate', 'Personal') as typeOfAccount
