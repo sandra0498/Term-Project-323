@@ -90,7 +90,37 @@ INSERT INTO PAYMENTWITHCASH(orderID, amountGiven, amountReturned) values
 
 
 INSERT INTO PAYMENTWITHCARD (orderID, cardholderFirstName,  cardholderLastName, lastFourDigitOfCardNum) values 
-()
+(1, 'Schmitt', 'Carine', 0000),
+(2,'King','Jean',0001),
+(3, 'Peter', 'Ferguson',0002),
+(4, 'Janine', 'Labrune',0003 ),
+(5,'Jonas', 'Bergulfsen', 0004),
+(6, 'Susan', 'Nelson', 0005),
+(7, 'Zbyszek', 'Piestrzeniewicz', 0006),
+(8, 'Roland', 'Keitel', 0007),
+(9, 'Julie', 'Murphy', 0008),
+(10, 'Kwai', 'Lee', 0009),
+
+
+(16, 'Diego', 'Freyre', 1000 ),
+(17, 'Christina', 'Berglund', 1001),
+(18, 'Jytte', 'Petersen', 1002 ),
+(19, 'Mary', 'Saveley', 1003 ),
+(20,'Jeff', 'Young', 1004),
+(21,'Juri', 'Hashimoto', 1005 ),
+(22,'Veysel', 'Oeztan', 1006),
+(23,'Schmitt', 'Carine', 0000),
+(24,'King','Jean',0001),
+(25,'Peter', 'Ferguson',0002),
+(26, 'Janine', 'Labrune',0003 ),
+(27,'Jonas', 'Bergulfsen', 0004),
+(28, 'Susan', 'Nelson', 0005),
+(29,'Zbyszek', 'Piestrzeniewicz', 0006),
+(30,'Roland', 'Keitel', 0007),
+
+
+
+
 
 
 
