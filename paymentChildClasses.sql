@@ -90,9 +90,7 @@ INSERT INTO PAYMENTWITHCASH(orderID, amountGiven, amountReturned) values
 
 
 INSERT INTO PAYMENTWITHCARD (orderID, cardholderFirstName,  cardholderLastName, lastFourDigitOfCardNum) values 
-
-
-
+()
 
 
 
