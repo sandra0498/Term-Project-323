@@ -126,3 +126,18 @@ INSERT INTO PAYMENTWITHCARD (orderID, cardholderFirstName,  cardholderLastName, 
 
 
 INSERT INTO PAYMENTWITHACCOUNT (orderID,  accountNumber,  balanceAfterPurchase) values 
+(36,11, 3.00),
+(37,12, 5.00),
+(38, 13, 6.00),
+(39, 14, 5.00),
+(40, 15, 5.00),
+(41,16, 3.00),
+(42,17, 5.00),
+(43,18, 2.00),
+(44, 19, 5.00),
+(45, 1, 6.00),
+(46,1, 3.00),
+(47,2, 5.00),
+(48,3, 3.00),
+( 49, 4, 5.00),
+(50,5, 3.00),
