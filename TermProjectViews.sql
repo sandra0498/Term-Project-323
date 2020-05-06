@@ -55,7 +55,7 @@ natural join KNOWNCUSTOMER
 natural join PAYMENT 
 natural join ORDERS 
 natural join ORDERITEMS
-having year(orderDate) = 2019
+where year(orderDate) = 2019
 order by total desc;  
 
 
