@@ -173,6 +173,124 @@ INSERT INTO PAYMENTWITHCARD (orderID, cardholderFirstName,  cardholderLastName, 
 
 
 
+
+
+
+(119,'Christina', 'Berglund', 1001),
+(120,'Jytte', 'Petersen', 1002),
+(121,'Jeff', 'Young', 1004),
+(122,'Veysel', 'Oeztan', 1006),
+(123,'Juri', 'Hashimoto', 1005),
+(124,'Mary', 'Saveley', 1003),
+(125,'Christina', 'Berglund', 1001),
+(126,'Schmitt', 'Carine', 0000),
+(127,'Jonas', 'Bergulfsen', 0004),
+(128,'Janine', 'Labrune',0003),
+(129,'Susan', 'Nelson', 0005),
+(130,'Zbyszek', 'Piestrzeniewicz', 0006),
+(136,'Janine', 'Labrune',0003),
+
+
+
+(137,'Mary', 'Saveley', 1003),
+(138,'Jeff', 'Young', 1004),
+(139,'Juri', 'Hashimoto', 1005),
+(140,'Christina', 'Berglund', 1001),
+(141,'Mary', 'Saveley', 1003),
+(142,'Christina', 'Berglund', 1001),
+(143,'Schmitt', 'Carine', 0000),
+(144,'King','Jean',0001),
+(145,'Janine', 'Labrune',0003),
+(146,'Jeff', 'Young', 1004),
+(147,'Jytte', 'Petersen', 1002),
+(148,'Christina', 'Berglund', 1001),
+(149,'Schmitt', 'Carine', 0000),
+(150,'King','Jean',0001),
+(153,'Janine', 'Labrune',0003),
+(156,'Janine', 'Labrune',0003),
+(157,'Christina', 'Berglund', 1001),
+(158,'Schmitt', 'Carine', 0000),
+(159,'Mary', 'Saveley', 1003),
+(160,'Christina', 'Berglund', 1001),
+
+
+
+(161,'Schmitt', 'Carine', 0000),
+(162,'Susan', 'Nelson', 0005),
+(163,'Zbyszek', 'Piestrzeniewicz', 0006),
+(164,'Roland', 'Keitel', 0007),
+(165,'Julie', 'Murphy', 0008),
+(166,'Schmitt', 'Carine', 0000),
+(167,'Susan', 'Nelson', 0005),
+(168,'Roland', 'Keitel', 0007),
+(169,'Diego', 'Freyre', 1000),
+(170,'Mary', 'Saveley', 1003),
+(176,'Jeff', 'Young', 1004),
+(177,'Juri', 'Hashimoto', 1005),
+(178,'Veysel', 'Oeztan', 1006),
+
+
+
+
+(179,'Jonas', 'Bergulfsen', 0004),
+(180,'Schmitt', 'Carine', 0000),
+(181,'Peter', 'Ferguson',0002),
+(182,'Susan', 'Nelson', 0005),
+(183,'Janine', 'Labrune',0003),
+(184,'King','Jean',0001),
+(185,'Zbyszek', 'Piestrzeniewicz', 0006),
+(186,'Schmitt', 'Carine', 0000),
+(187,'Zbyszek', 'Piestrzeniewicz', 0006),
+(188,'Roland', 'Keitel', 0007),
+(189,'Julie', 'Murphy', 0008),
+(190,'Zbyszek', 'Piestrzeniewicz', 0006),
+(196,'Schmitt', 'Carine', 0000),
+(197,'Zbyszek', 'Piestrzeniewicz', 0006),
+(198,'Julie', 'Murphy', 0008),
+(199,'King','Jean',0001),
+(200,'Jonas', 'Bergulfsen', 0004),
+
+
+
+
+(201,'Schmitt', 'Carine', 0000),
+(202,'Janine', 'Labrune',0003),
+(203,'Jonas', 'Bergulfsen', 0004),
+(204,'Peter', 'Ferguson',0002),
+(205,'King','Jean',0001),
+(206,'Schmitt', 'Carine', 0000),
+(207,'Jonas', 'Bergulfsen', 0004),
+(208,'Susan', 'Nelson', 0005),
+(209,'Zbyszek', 'Piestrzeniewicz', 0006),
+(210,'Roland', 'Keitel', 0007),
+(216,'Julie', 'Murphy', 0008),
+(217,'Kwai', 'Lee', 0009),
+(218,'Mary', 'Saveley', 1003),
+(219,'Christina', 'Berglund', 1001),
+(220,'Roland', 'Keitel', 0007),
+(221,'Juri', 'Hashimoto', 1005),
+(222, 'Veysel', 'Oeztan', 1006),
+(223,'Roland', 'Keitel', 0007),
+(224,'Jonas', 'Bergulfsen', 0004),
+(225,'Peter', 'Ferguson',0002),
+
+
+
+
+
+(226,'Schmitt', 'Carine', 0000),
+(227,'King','Jean',0001),
+(228,'Jonas', 'Bergulfsen', 0004),
+(229, 'Susan', 'Nelson', 0005),
+(230,'Roland', 'Keitel', 0007),
+(236,'Jonas', 'Bergulfsen', 0004),
+(237,'Schmitt', 'Carine', 0000),
+(238,'King','Jean',0001),
+(239,'Peter', 'Ferguson',0002),
+(240,'Janine', 'Labrune',0003);
+
+
+
 INSERT INTO PAYMENTWITHACCOUNT (orderID,  accountNumber,  balanceAfterPurchase) values 
 (36,11, 3.00),
 (37,12, 5.00),
@@ -191,3 +309,27 @@ INSERT INTO PAYMENTWITHACCOUNT (orderID,  accountNumber,  balanceAfterPurchase) 
 (56, 6, 5.00), 
 (57, 7, 3.00), 
 (58, 10, 6.00), 
+
+
+
+
+
+
+-- # customerID	customerFirstName	customerLastName
+-- 1	Schmitt	Carine 
+-- 2	King	Jean
+-- 3	Peter	Ferguson
+-- 4	Janine	Labrune
+-- 5	Jonas	Bergulfsen
+-- 6	Susan	Nelson
+-- 7	Zbyszek	Piestrzeniewicz
+-- 8	Roland	Keitel
+-- 9	Julie	Murphy
+-- 10	Kwai	Lee
+-- 11	Diego	Freyre
+-- 12	Christina	Berglund
+-- 13	Jytte	Petersen
+-- 14	Mary	Saveley
+-- 15	Jeff	Young
+-- 16	Juri	Hashimoto
+-- 17	Veysel	Oeztan
