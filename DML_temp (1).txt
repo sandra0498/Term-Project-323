@@ -2031,7 +2031,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (48, 30.00, 30.00),
 (49, 5.00, 5.00),
 (50, 15.00, 15.00),
-(51, 5.00, 4.00),
+(51, 5.00, 5.00), --recent change 
 (52, 45.00, 45.00),
 (53, 15.00, 15.00),
 (54, 45.00, 45.00),
