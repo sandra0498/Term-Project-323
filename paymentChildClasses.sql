@@ -119,6 +119,7 @@ INSERT INTO PAYMENTWITHCARD (orderID, cardholderFirstName,  cardholderLastName, 
 (30,'Roland', 'Keitel', 0007),
 
 
+(46,'Schmitt', 'Carine', 0000),
 
 (59, 'Julie', 'Murphy', 0008),
 (60,'Kwai', 'Lee', 0009)),
@@ -150,7 +151,26 @@ INSERT INTO PAYMENTWITHCARD (orderID, cardholderFirstName,  cardholderLastName, 
 (89,'Diego', 'Freyre', 1000 ),
 (90,'Christina', 'Berglund', 1001),
 
-(46,'Schmitt', 'Carine', 0000),
+
+(96,'Veysel', 'Oeztan', 1006),
+(97,'Juri', 'Hashimoto', 1005),
+(98, 'Jytte', 'Petersen', 1002),
+(99,'Christina', 'Berglund', 1001),
+(100,'Kwai', 'Lee', 0009),
+(101,'Schmitt', 'Carine', 0000),
+(102,'King','Jean',0001),
+(103,'Peter', 'Ferguson',0002),
+(104,'Janine',  'Labrune',0003),
+(105,'Jonas', 'Bergulfsen', 0004),
+(106,'Schmitt', 'Carine', 0000),
+(107,'King','Jean',0001),
+(108,'Peter', 'Ferguson',0002),
+(109,'Janine', 'Labrune',0003),
+(110,'Jonas', 'Bergulfsen', 0004),
+(116,'Schmitt', 'Carine', 0000),
+(117,'Janine', 'Labrune',0003),
+(118,'Jonas', 'Bergulfsen', 0004),
+
 
 
 INSERT INTO PAYMENTWITHACCOUNT (orderID,  accountNumber,  balanceAfterPurchase) values 
@@ -169,5 +189,5 @@ INSERT INTO PAYMENTWITHACCOUNT (orderID,  accountNumber,  balanceAfterPurchase) 
 ( 49, 4, 5.00),
 (50,5, 3.00),
 (56, 6, 5.00), 
-(57,7, 3.00), 
-(58,10, 6.00), 
+(57, 7, 3.00), 
+(58, 10, 6.00), 
