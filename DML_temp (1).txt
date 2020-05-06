@@ -2,8 +2,9 @@ USE cecs323sec01bg08;
 
 
 
+
 INSERT INTO ORDERS (orderDate, occasion) VALUES 
-('2020-05-06', 'Birthday'),
+('2020-05-06', 'birthday'),
 ('2020-05-06', NULL),
 ('2020-05-06', NULL),
 ('2020-05-06', NULL),
@@ -34,7 +35,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2020-03-15', NULL),
 ('2020-03-15', NULL),
 ('2020-02-15', NULL),
-('2020-02-15', 'Birthday'),
+('2020-02-15', 'birthday'),
 ('2020-02-15', NULL),
 ('2020-02-15', NULL),
 ('2020-02-15', NULL),
@@ -53,7 +54,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2020-01-14', NULL),
 ('2020-01-14', NULL),
 ('2020-01-14', NULL),
-('2019-12-04', 'Birthday'),
+('2019-12-04', 'birthday'),
 ('2019-12-04', NULL),
 ('2019-12-04', NULL),
 ('2019-12-04', NULL),
@@ -63,6 +64,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2019-12-17', NULL),
 ('2019-12-17', NULL),
 ('2019-12-17', NULL),
+('2019-11-11', 'veterans day'),
 ('2019-11-05', NULL),
 ('2019-11-05', NULL),
 ('2019-11-05', NULL),
@@ -95,7 +97,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2019-09-13', NULL),
 ('2019-08-24', NULL),
 ('2019-08-24', NULL),
-('2019-08-24', 'Birthday'),
+('2019-08-24', 'birthday'),
 ('2019-08-24', NULL),
 ('2019-08-24', NULL),
 ('2019-08-26', NULL),
@@ -135,7 +137,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2019-05-15', NULL),
 ('2019-04-06', NULL),
 ('2019-04-06', NULL),
-('2019-04-06', 'Birthday'),
+('2019-04-06', 'birthday'),
 ('2019-04-06', NULL),
 ('2019-04-06', NULL),
 ('2019-04-17', NULL),
@@ -154,6 +156,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2019-03-15', NULL),
 ('2019-03-15', NULL),
 ('2019-02-15', NULL),
+('2019-02-17', 'lunar new years'),
 ('2019-02-15', NULL),
 ('2019-02-15', NULL),
 ('2019-02-15', NULL),
@@ -174,7 +177,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2019-01-14', NULL),
 ('2019-01-14', NULL),
 ('2018-12-04', NULL),
-('2018-12-04', 'Birthday'),
+('2018-12-04', 'birthday'),
 ('2018-12-04', NULL),
 ('2018-12-04', NULL),
 ('2018-12-04', NULL),
@@ -183,6 +186,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2018-12-17', NULL),
 ('2018-12-17', NULL),
 ('2018-12-17', NULL),
+('2018-12-25', 'halloween'),
 ('2018-11-05', NULL),
 ('2018-11-05', NULL),
 ('2018-11-05', NULL),
@@ -214,7 +218,7 @@ INSERT INTO ORDERS (orderDate, occasion) VALUES
 ('2018-09-13', NULL),
 ('2018-09-13', NULL),
 ('2018-08-24', NULL),
-('2018-08-24', 'Birthday'),
+('2018-08-24', 'birthday'),
 ('2018-08-24', NULL),
 ('2018-08-24', NULL),
 ('2018-08-24', NULL),
@@ -495,7 +499,11 @@ INSERT INTO DINEINORDER (orderID) VALUES
 ('232'),
 ('233'),
 ('234'),
-('235');
+('235'),
+('241'),
+('242'),
+('243');
+
 
 
 
@@ -635,8 +643,8 @@ INSERT INTO MIMINGSACCOUNT (accountTypeID, customerID, balance, openDate, discou
 (1, 6, 90.00, '2019-04-17', NULL, '6035558647'),
 (1, 7, 80.00, '2019-05-15', NULL, '6175558555'),
 (1, 5, 90.00, '2019-04-17', NULL, '6175559555'),
-(1, 8, 80.00, '2019-05-15', NULL, '6175558555'),
-(2, 8, 250.00, '2019-05-20', NULL, '6175558555'),
+(1, 8, 80.00, '2019-05-15', NULL, '6140858555'),
+(2, 8, 250.00, '2019-05-20', NULL, '6140858555'),
 (1, 9, 60.00, '2019-05-27', NULL, '4085553659'),
 (2, 10, 170.00, '2019-05-27', NULL, '2035559545'),
 (1, 11, 120.00, '2019-06-19', NULL, '5085552555'),
@@ -652,20 +660,22 @@ INSERT INTO MIMINGSACCOUNT (accountTypeID, customerID, balance, openDate, discou
 
 
 INSERT INTO PERSONALACCOUNT (accountNumber, address, zipCode, emailAddress, birthDate, veteranStatus) VALUES
-(1, '636 St Kilda Road', 92618, 'Schmitt@gmail.com', '1997-05-04', 'Null'),
-(2, '5677 Strong St.', 92619, 'King@gmail.com', '1993-10-02', 'Null'),
-(3, 'Erling Skakkes gate 78', 92620, 'Peter@gmail.com', '1992-01-04', 'Null'),
-(4, '5557 North Pendale Street', 92621, 'Janine@gmail.com', '1995-02-07', 'Null'),
-(6, 'Berguvsvägen  8', 92622, 'Susan@gmail.com', '1990-05-10', 'Null'),
-(7, '7586 Pompton St.', 92623, 'zbyszek@gmail.com', '1998-03-14', 'Null'),
-(9, '149 Spinnaker Dr.', 92624, 'Julie@gmail.com', '1988-04-24', 'Null'),
-(11, '265, boulevard Charonne', 92789, 'Diego@gmail.com', '1980-07-04', 'Null'),
-(12, '2678 Kingston Rd.', 94518, 'Chritina@gmail.com', '1970-08-27', 'Null'),
-(13, '25 Maiden Lane', 94567, 'Jytte@gmail.com', '1989-04-28', 'Null'),
-(14, '12, Berkeley Gardens Blvd', 94585, 'Mary@gmail.com', '1977-09-13', 'Null'),
-(15, '7635 Spinnaker Dr.', 94777, 'Jeff@gmail.com', '1998-10-09', 'Null'),
-(16, '78934 Hillside Dr.', 96542, 'Juri@gmail.com', '1978-11-08', 'Null'),
-(17, 'Suntec Tower Three', 98951, 'Veysel@gmail.com', '1985-12-02', 'Null');
+(1, '636 St Kilda Road', 92618, 'Schmitt@gmail.com', '1997-05-04', False),
+(2, '5677 Strong St.', 92619, 'King@gmail.com', '1993-10-02', False),
+(3, 'Erling Skakkes gate 78', 92620, 'Peter@gmail.com', '1992-01-04', False),
+(4, '5557 North Pendale Street', 92621, 'Janine@gmail.com', '1995-02-07', True),
+(5, '89, Rose Villa', 92621, 'Jonas@gmail.com', '1999-01-10', False),
+(6, 'BerguvsvÃ¤gen  8', 92622, 'Susan@gmail.com', '1990-05-10', False),
+(7, '7586 Pompton St.', 92623, 'zbyszek@gmail.com', '1998-03-14', False),
+(8, '100, Oak Glen', 92620, 'Roland@gmail.com', '1992-10-09', False),
+(9, '149 Spinnaker Dr.', 92624, 'Julie@gmail.com', '1988-04-24', True),
+(11, '265, boulevard Charonne', 92789, 'Diego@gmail.com', '1980-07-04', True),
+(12, '2678 Kingston Rd.', 94518, 'Chritina@gmail.com', '1970-08-27', False),
+(13, '25 Maiden Lane', 94567, 'Jytte@gmail.com', '1989-04-28', False),
+(14, '12, Berkeley Gardens Blvd', 94585, 'Mary@gmail.com', '1977-09-13', False),
+(15, '7635 Spinnaker Dr.', 94777, 'Jeff@gmail.com', '1998-10-09', False),
+(16, '78934 Hillside Dr.', 96542, 'Juri@gmail.com', '1978-11-08', False),
+(17, 'Suntec Tower Three', 98951, 'Veysel@gmail.com', '1985-12-02', False);
 
 
 
@@ -780,7 +790,7 @@ INSERT INTO MENU (menuType, `size`) VALUES
 
 
 
-INSERT INTO INGREDIENTS (ingredientName) VALUES -------------------------------------------------------------------------------------------------------------
+INSERT INTO INGREDIENTS (ingredientName) VALUES
 ('Artichoke'),
 ('Arugula'),
 ('Asparagus'),
@@ -823,7 +833,7 @@ INSERT INTO INGREDIENTS (ingredientName) VALUES --------------------------------
 ('Peanut'),
 ('Chives'),
 ('Shumai Wrappers'),
-('Rice Wine Vinegar'),
+('Rice Wine Vineger'),
 ('Sesame oil'),
 ('Wonton Wrapper'),
 ('Chicken Broth'),
@@ -851,13 +861,6 @@ INSERT INTO INGREDIENTS (ingredientName) VALUES --------------------------------
 ('Rice'),
 ('Peas'),
 ('Oil');
-
-
-
-
-
-
-
 
 
 
@@ -956,7 +959,7 @@ Insert into SALARY (salaryType) values
 
 
 
-Insert into STAFF (firstName, lastName, address, phoneNumber, salaryType) values 
+Insert into STAFF (firstName, lastName, address, phoneNumber, salaryType) values
 ('John', 'Doe', '5062 ElMonto Ave', '7142895672', 'Full Time'),
 ('Jane', 'McKnight', '10993 Hope St', '5732219405', 'Full Time'),
 ('Bob', 'Beet', '2493 New Flw Dr', '6382984913', 'Full Time'),
@@ -974,26 +977,26 @@ Insert into STAFF (firstName, lastName, address, phoneNumber, salaryType) values
 ('Brandon', 'Doyl', '92384 Orange Vly', '9301849201', 'Full Time'),
 ('Katelyn', 'Black', '8231 Henry St', '7164839274', 'Part Time'),
 ('Tiffany', 'Layle', '34872 Boat Dr', '5192947539', 'Part Time'),
-('Roland', 'Keitel', '2678 Kingston Rd', '7605558146', 'Part Time'),
-('Brydey', 'Walker', '25 Maiden Ln', '61294111555', 'Part Time'),
-('Kwai', 'Lee', '16780 Pompton St', '61294958555', 'Part Time'),
-('Diego', 'Freyre', '12 Berkeley Gardens', '4722121555', 'Part Time'),
-('Berglund', 'Christina ', '1900 Oak St', '85222511555', 'Part Time'),
-('Jerry', 'Tseng', '7635 Spinnaker Dr', '31204919555', 'Part Time'),
+('Roland', 'Keitel', '2678 Kingston Rd.', '7605558146', 'Part Time'),
+('Brydey', 'Walker', '25 Maiden Lane', '+612 9411 1555', 'Part Time'),
+('Kwai', 'Lee', '16780 Pompton St.', '+61 2 9495 8555', 'Part Time'),
+('Diego', 'Freyre', '12 Berkeley Gardens', '+47 2212 1555', 'Part Time'),
+('Berglund', 'Christina ', '1900 Oak St.', '+852 2251 1555', 'Part Time'),
+('Jerry', 'Tseng', '7635 Spinnaker Dr.', '+31 20 491 9555', 'Part Time'),
 ('Julie', 'King', 'Suntec Tower Three', '5085559555', 'Part Time'),
-('Michael', 'Frick', '4097 Douglas Ave', '2015559350', 'Part Time'),
-('Matti', 'Karttunen', '43 Rue St. Laurent', '7774839274', 'Part Time'),
-('Leslie', 'Taylor', '201 Miller St', '5192547539', 'Part Time'),
+('Michael', 'Frick', '4097 Douglas Av.', '2015559350', 'Part Time'),
+('Matti', 'Karttunen', '43 rue St. Laurent', '7774839274', 'Part Time'),
+('Leslie', 'Taylor', '201 Miller Street', '5192547539', 'Part Time'),
 ('Yoshi', 'Tamuri', 'Dramensveien 126A', '5192947500', 'Part Time'),
 ('Miguel', 'Barajas', '12387 McAven Blvd', '7264017332', 'Part Time'),
 ('Armand', 'Kuger', 'Mehrheimerstr. 369', '6175558555', 'Full Time'),
 ('Patricia', 'McKenna', 'Monitor Mey Building', '5083459555', 'Full Time'),
-('Dorothy', 'Young', '39323 Spinnaker Dr', '2015548350', 'Full Time'),
+('Dorothy', 'Young', '39323 Spinnaker Dr.', '2015548350', 'Full Time'),
 ('Lino ', 'Rodriguez', 'Kingsfordweg 151', '7874839274', 'Full Time'),
-('Maurizio ', 'Moroni', '378 North St', '5154547539', 'Full Time'),
-('Perrier', 'Tamuri', '162-164 Grafton Rd', '5196787500', 'Full Time'),
-('Sarah', 'Barajas', '6047 Douglas Av', '7234017332', 'Full Time'),
-('Martha', 'Larsson', '1250 Preto St', '7266787332', 'Full Time'),
+('Maurizio ', 'Moroni', '378 North Srt', '5154547539', 'Full Time'),
+('Perrier', 'Tamuri', '162-164 Grafton Road', '5196787500', 'Full Time'),
+('Sarah', 'Barajas', '6047 Douglas Av.', '7234017332', 'Full Time'),
+('Martha', 'Larsson', '1250 Preto Street', '7266787332', 'Full Time'),
 ('Nasha', 'Lyfe', '5231 Monto Ave', '3850283958', 'Full Time'),
 ('Tina', 'Collin', '231 South Ln', '8372047261', 'Full Time'),
 ('John', 'Wyck', '63423 Cheeve Dr', '8269471639', 'Full Time'),
@@ -1098,46 +1101,6 @@ Insert into LINECOOK (lineCookID) values
 
 
 
-insert into SOUSCHEFSPECIALTY (sousChefID, foodItemName) values
-(6, 'Egg Roll'),
-(11, 'Spring Roll'),
-(13, 'Lettuce Wraps'),
-(38, 'Fried Tofu'),
-(39, 'Steamed Pork Bun'),
-(40, 'Fried Shrimp Balls'),
-(41, 'French Fries'),
-(42, 'Egg Drop Soup'),
-(43, 'Wonton Soup'),
-(44, 'Hot & Sour Soup'),
-(45, 'Crab Meat Soup'),
-(46, 'Chinese Rice Cake Soup'),
-(47, 'Tofu Soup'),
-(48, 'Sesame Oil Chicken Soup'),
-(49, 'Chow Mein'),
-(6, 'Egg Foo Young'),
-(11, 'Chop Suey'),
-(13, 'Mongolian Beef'),
-(47, 'Fried Rice'),
-(48, 'Shumai'),
-(49, 'Kung Pao Chicken');
-
-
-
-insert into SOUSCHEFMENTORSHIP (sousChefID, sousChefMentorID, foodItemName, startDate, endDate) values
-(38, 6, 'Egg Foo Young', '2018-07-23', '2018-08-29'),
-(39, 11, 'Spring Roll', '2018-11-03', '2018-12-15'),
-(40, 13, 'Mongolian Beef', '2019-01-23', '2019-03-01'),
-(41, 47, 'Tofu Soup', '2019-02-20', '2019-03-25'),
-(42, 48, 'Shumai', '2019-04-10', '2019-05-17'),
-(43, 49, 'Chow Mein', '2019-04-10', '2019-05-12'),
-(44, 6, 'Egg Roll', '2019-06-07', '2019-07-11'),
-(45, 11, 'Chop Suey', '2019-09-02', '2019-10-03'),
-(46, 13, 'Lettuce Wraps', '2019-10-06', '2019-11-13'),
-(44, 47, 'Fried Rice', '2020-01-14', '2020-02-25'),
-(39, 48, 'Sesame Oil Chicken Soup', '2020-04-30', '2020-05-25'),
-(41, 49, 'Kung Pao Chicken', '2020-05-21', NULL);
-
-
 
 
 INSERT INTO STATION (StationName) values 
@@ -1147,7 +1110,7 @@ INSERT INTO STATION (StationName) values
 ('Pantry Station'),
 ('Pastry Station'),
 ('Roast Station'), 
-('Saut� Station'), 
+('Sauté Station'), 
 ('Vegetable Station');
 
 
@@ -1215,7 +1178,6 @@ INSERT INTO STAFFINSURANCE (StaffID, InsuranceID) values
 (36, 4),
 (37, 4),
 (37, 1),
-
 (38, 1),
 (38, 2),
 (39, 1),
@@ -1244,12 +1206,18 @@ INSERT INTO STAFFINSURANCE (StaffID, InsuranceID) values
 
 
 
+
+
 INSERT INTO LIFEINSURANCE (StaffID, InsuranceID, DeathBenefitAmount) values 
 (3, 2, 5000.00),
 (5, 2, 5000.00),
 (9, 2, 5000.00),
 (13, 2, 5000.00),
-(14, 2, 5000.00);
+(14, 2, 5000.00),
+(38, 2, 5000.00),
+(41, 2, 5000.00),
+(45, 2, 5000.00),
+(47, 2, 5000.00);
 
 
 
@@ -1260,7 +1228,10 @@ INSERT INTO DISABILITYINSURANCE (StaffID, InsuranceID, DisabilityAmount, WeekNum
 (10, 3, 200.00, 8, 3),
 (13, 3, 200.00, 5, 3),
 (30, 3, 200.00, 4, 3),
-(32, 3, 200.00, 6, 3);
+(32, 3, 200.00, 6, 3),
+(39, 3, 200.00, 5, 3), 
+(48, 3, 200.00, 7, 3),
+(49,3, 200.00, 8, 3);
 
 
 
@@ -1285,7 +1256,19 @@ INSERT INTO MEDICALINSURANCE(StaffID, InsuranceID, EmergencyRoomPay, DoctorVisit
 (34, 1, 350.00, 30.00),
 (35, 1, 350.00, 30.00),
 (36, 1, 350.00, 30.00),
-(37, 1, 350.00, 30.00);
+(37, 1, 350.00, 30.00),
+(38, 1, 350.00, 30.00), 
+(39, 1, 350.00, 30.00),
+(40, 1, 350.00, 30.00), 
+(41, 1, 350.00, 30.00), 
+(42, 1, 350.00, 30.00),
+(43, 1, 350.00, 30.00),
+(44, 1, 350.00, 30.00),
+(45, 1, 350.00, 30.00),
+(46, 1, 350.00, 30.00), 
+(47, 1, 350.00, 30.00),
+(48, 1, 350.00, 30.00), 
+(49, 1, 350.00, 30.00);
 
 
 
@@ -1302,7 +1285,12 @@ INSERT INTO DENTALINSURANCE(StaffID, InsuranceID, DentalAmount) values
 (14, 4, 250.00),
 (15, 4, 250.00),
 (31, 4, 250.00),
-(37, 4, 250.00);
+(37, 4, 250.00),
+(40, 4, 250.00), 
+(43, 4, 250.00),
+(44, 4, 250.00),
+(45, 4, 250.00), 
+(46, 4, 250.00);
 
 
 
@@ -1324,7 +1312,7 @@ INSERT INTO FOODITEMS (foodItemName, categoryID, spicinessLevel, headChefID, ing
 ('Tofu Soup', 2, 'Tangy', 12, 'Olive Oil, Tofu, Soy Sauce, Garlic, Carrot, Celery, Mushroom, Ginger, Broth', 'A simple vegatarian soup consisting of tofu, mushroom and some veggies.'),
 ('Sesame Oil Chicken Soup', 2, 'Oh My God', 12, 'Ground Chicken, Vegetable Oil, Rice Wine Vinegar, Sesame Oil, Ginger, Somen Noodles', 'A noodled soup with chicken.'),
 ('Chow Mein', 3, 'Mild', 5, 'Oyster Sauce, Soy Sauce, Garlic, Ginger, Sriracha, Noodle, Black Pepper Powder, Corn Oil, Mushroom, Bok Choy, Bean Sprouts', 'A stir-fry mix of noodles and different veggies.'),
-('Egg Foo Young', 3, 'Mild', 5, 'Egg, Bean Sprouts, Spring Onion, Garlic, Vegetable Oil, Chicken Broth, Sugar, White Vinegar, Soy Sauce', 'An egg-like patty that has bean sprouts and onion mixed into it.'),
+('Egg Foo Young', 3, 'Mild', 5, 'Bean Sprouts, Spring Onion, Garlic, Vegetable Oil, Chicken Broth, Sugar, White Vinegar, Soy Sauce', 'An egg-like patty that has bean sprouts and onion mixed into it.'),
 ('Chop Suey', 3, 'Mild', 5, 'Pork Loin, Onion, Celery, Salt, Black Pepper Powder, Beach Sprouts, Cornstarch, Soy Sauce, White Sugar', 'Mixed veggies that would be served with fresh white rice or mein noodles.'),
 ('Mongolian Beef', 3, 'Hot', 12, 'Flank Steak, Cornstarch, Corn Oil, Ginger, Garlic, Soy Sauce, Brown Sugar, Spring Onion', 'Sweet and crispy flavors in the meat with some scallions.'),
 ('Fried Rice', 3, 'Mild', 12, 'Rice, Ground Chicken, Spring Onion, Cabbage, Egg, Carrot, Garlic, Soy sauce, Peas', 'Dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables or meat.'),
@@ -1799,7 +1787,10 @@ INSERT INTO ORDERITEMS (orderID, foodItemName, menuID, meatType, quantity) VALUE
 (237, 'Hot & Sour Soup', 3, 'None', 2),
 (238, 'Chow Mein', 3, 'Pork', 1),
 (239, 'Egg Foo Young', 4, 'None', 2),
-(240, 'Fried Rice', 3, 'Beef', 1);
+(240, 'Fried Rice', 3, 'Beef', 1),
+(241, 'Tofu Soup', 3, 'None', 1),
+(242, 'Egg Foo Young', 4, 'Chicken', 3),
+(243, 'Mongolian Beef', 3, 'Beef', 1);
 
 
 
@@ -1925,7 +1916,62 @@ INSERT INTO DINEINORDERITEMS (orderID, foodItemName, menuID, meatType, seatNumbe
 (232, 'Steamed Pork Bun', 3, 'Pork', 1,7,3),
 (233, 'Tofu Soup', 3, 'None',2,7, 1),
 (234, 'Egg Foo Young', 4, 'Chicken',1,8, 3),
-(235, 'Mongolian Beef', 3, 'Beef', 2,8,1);
+(235, 'Mongolian Beef', 3, 'Beef', 2,8,1),
+(241, 'Tofu Soup', 3, 'None', 1,6,1),
+(242, 'Egg Foo Young', 4, 'Chicken',2,2, 3),
+(243, 'Mongolian Beef', 3, 'Beef',4,2, 1);
+
+
+
+
+
+
+
+Insert into SOUSCHEFSPECIALITY (sousChefID, foodItemName) values
+(6, 'Egg Roll'),
+(11, 'Spring Roll'),
+(13, 'Lettuce Wraps'),
+(38, 'Fried Tofu'),
+(39, 'Steamed Pork Bun'),
+(40, 'Fried Shrimp Balls'),
+(41, 'French Fries'),
+(42, 'Egg Drop Soup'),
+(43, 'Wonton Soup'),
+(44, 'Hot & Sour Soup'),
+(45, 'Crab Meat Soup'),
+(46, 'Chinese Rice Cake Soup'),
+(47, 'Tofu Soup'),
+(48, 'Sesame Oil Chicken Soup'),
+(49, 'Chow Mein'),
+(6, 'Egg Foo Young'),
+(11, 'Chop Suey'),
+(13, 'Mongolian Beef'),
+(47, 'Fried Rice'),
+(48, 'Shumai'),
+(49, 'Kung Pao Chicken');
+
+
+
+
+
+
+
+
+
+
+Insert into SOUSCHEFMENTORSHIP (sousChefID, sousChefMentorID, foodItemName, startDate, endDate) values
+(38, 6, 'Egg Foo Young', '2018-07-23', '2018-08-29'),
+(39, 11, 'Spring Roll', '2018-11-03', '2018-12-15'),
+(40, 13, 'Mongolian Beef', '2019-01-23', '2019-03-01'),
+(41, 47, 'Tofu Soup', '2019-02-20', '2019-03-25'),
+(42, 48, 'Shumai', '2019-04-10', '2019-05-17'),
+(43, 49, 'Chow Mein', '2019-04-10', '2019-05-12'),
+(44, 6, 'Egg Roll', '2019-06-07', '2019-07-11'),
+(45, 11, 'Chop Suey', '2019-09-02', '2019-10-03'),
+(46, 13, 'Lettuce Wraps', '2019-10-06', '2019-11-13'),
+(44, 47, 'Fried Rice', '2020-01-14', '2020-02-25'),
+(39, 48, 'Sesame Oil Chicken Soup', '2020-04-30', '2020-05-25'),
+(41, 49, 'Kung Pao Chicken', '2020-05-21', '2020-05-21');
 
 
 
@@ -1995,7 +2041,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (58, 15.00, 15.00),
 (59, 30.00, 30.00),
 (60, 15.00, 15.00),
-(61, 8.00, 8.00),
+(61, 8.00, 6.00),
 (62, 16.00, 16.00),
 (63, 8.00, 8.00),
 (64, 10.00, 10.00),
@@ -2087,7 +2133,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (150, 15.00, 15.00),
 (151, 8.00, 8.00),
 (152, 16.00, 16.00),
-(153, 8.00, 8.00),
+(153, 8.00, 6.40),
 (154, 10.00, 10.00),
 (155, 10.00, 10.00),
 (156, 10.00, 10.00),
@@ -2117,7 +2163,7 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (180, 15.00, 15.00),
 (181, 8.00, 8.00),
 (182, 16.00, 16.00),
-(183, 8.00, 8.00),
+(183, 8.00, 6.00),
 (184, 10.00, 10.00),
 (185, 20.00, 20.00),
 (186, 10.00, 10.00),
@@ -2174,7 +2220,10 @@ INSERT INTO PAYMENT (orderID, originalAmount, amountAfterDiscount) VALUES
 (237,30.00 , 30.00),
 (238, 15.00, 15.00),
 (239,10.00 , 10.00),
-(240, 15.00, 15.00);
+(240, 15.00, 15.00),
+(241, 15.00, 15.00),
+(242,15.00 , 15.00),
+(243, 15.00, 15.00);
 
 
 
@@ -2234,7 +2283,6 @@ INSERT INTO ANONYMOUS (orderID) VALUES
 ('135'),
 ('151'),
 ('152'),
-('153'),
 ('154'),
 ('155'),
 ('171'),
@@ -2256,7 +2304,10 @@ INSERT INTO ANONYMOUS (orderID) VALUES
 ('232'),
 ('233'),
 ('234'),
-('235');
+('235'),
+('241'),
+('242'),
+('243');
 
 
 
@@ -2380,6 +2431,7 @@ INSERT INTO KNOWNCUSTOMER (orderID, customerID) VALUES
 ('148',12),
 ('149',1),
 ('150',2),
+('153',4),
 ('156',4),
 ('157',12),
 ('158',1),
@@ -2445,5 +2497,36 @@ INSERT INTO KNOWNCUSTOMER (orderID, customerID) VALUES
 ('238',2),
 ('239',3),
 ('240',4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--SET FOREIGN_KEY_CHECKS = 0;
+
+
+
+--SET FOREIGN_KEY_CHECKS = 1;
+
+
+
+
 
 
