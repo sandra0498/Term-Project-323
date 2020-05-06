@@ -1,11 +1,13 @@
-
-
+-- Not sure if we need tables for these? Might be for a trigger???
 SELECT * FROM PAYMENTWITHACCOUNT;
 SELECT * FROM PAYMENTWITHCARD;
 SELECT * FROM PAYMENTWITHCASH;
-SELECT * FROM SHIFT;
-SELECT * FROM STAFFSTATION;
-SELECT * FROM STAFFTIP;
+
+
+SELECT * FROM SHIFT; -- I added the shifts for 2020-05-05
+SELECT * FROM STAFFSTATION; -- I added some lines where 1 line cook can be at 2 stations
+SELECT * FROM ATTENDANCE; -- I filled this out for the new Sous Chefs
+SELECT * FROM STAFFTIP; -- 
 SELECT * FROM STAFFTABLELOG;
 
 
@@ -27,7 +29,9 @@ INSERT INTO SHIFT (ShiftType, ShiftDate, ManagerID, HeadChefID) VALUES
 ('Morning', '2020-05-03', 1, 5),
 ('Evening', '2020-05-03', 9, 12),
 ('Morning', '2020-05-04', 1, 5),
-('Evening', '2020-05-04', 9, 12);
+('Evening', '2020-05-04', 9, 12),
+('Morning', '2020-05-05', 9, 12),
+('Evening', '2020-05-05', 1, 5);
 
 SET FOREIGN_KEY_CHECKS = 1;
 
@@ -156,24 +160,29 @@ INSERT INTO STAFFSTATION (LineCookID, StationName, ShiftType, ShiftDate) values
 (7, 'Sauté Station', 'Evening', '2020-05-05'),
 (8, 'Pastry Station', 'Evening', '2020-05-05'),
 (10, 'Grill Station', 'Morning', '2020-05-05'),
+(10, 'Sauté Station', 'Morning', '2020-05-05'),
 (14, 'Butcher Station','Morning', '2020-05-05'),
 (15, 'Roast Station', 'Morning', '2020-05-05'),
 (30, 'Fry Station', 'Morning', '2020-05-05'),
 (31, 'Grill Station', 'Evening', '2020-05-05'),
 (32, 'Vegetable Station', 'Morning', '2020-05-05'),
+(32, 'Roast Station', 'Morning', '2020-05-05'),
 (33, 'Sauté Station', 'Evening', '2020-05-05'),
 (34, 'Pastry Station', 'Morning', '2020-05-05'),
-(35, 'Grill Station', 'Evening', '2020-05-15'),
+(35, 'Grill Station', 'Evening', '2020-05-05'),
+(35, 'Pastry Station', 'Evening', '2020-05-05),
 (36, 'Butcher Station','Evening', '2020-05-05'),
 (37, 'Roast Station', 'Morning', '2020-05-05'),
 (2, 'Fry Station', 'Evening', '2020-05-06'),
 (3, 'Grill Station', 'Morning', '2020-05-06'),
 (4, 'Vegetable Station', 'Morning', '2020-05-06'),
+(4, 'Butcher Station', 'Morning', '2020-05-06'),
 (7, 'Sauté Station', 'Morning', '2020-05-06'),
 (8, 'Pastry Station', 'Morning', '2020-05-06'),
 (10, 'Grill Station', 'Evening', '2020-05-06'),
 (14, 'Butcher Station','Evening', '2020-05-06'),
 (15, 'Roast Station', 'Evening', '2020-05-06'),
+(15, 'Grill Station', 'Evening', '2020-05-06'),
 (30, 'Fry Station', 'Evening', '2020-05-06'),
 (31, 'Grill Station', 'Morning', '2020-05-06'),
 (32, 'Vegetable Station', 'Evening', '2020-05-06'),
@@ -181,7 +190,8 @@ INSERT INTO STAFFSTATION (LineCookID, StationName, ShiftType, ShiftDate) values
 (34, 'Pastry Station', 'Evening', '2020-05-06'),
 (35, 'Grill Station', 'Morning', '2020-05-06'),
 (36, 'Butcher Station','Morning', '2020-05-06'),
-(37, 'Roast Station', 'Evening', '2020-05-06');
+(37, 'Roast Station', 'Evening', '2020-05-06'),
+(37, 'Fry Station', 'Evening', '2020-05-06');
 
 SET FOREIGN_KEY_CHECKS = 1;
 
