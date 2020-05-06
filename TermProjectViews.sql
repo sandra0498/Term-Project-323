@@ -38,7 +38,7 @@ natural join SOUSCHEFSPECIALTY;
 
 create view Customer_Sales_v as 
 select customerID, sum(originalAmount * quantity) as amountSpent
-from customers 
+from CUSTOMER 
 natural join KNOWNCUSTOMER
 natural join PAYMENT 
 natural join ORDERS 
@@ -50,7 +50,7 @@ natural join ORDERITEMS;
 --  from highest to the lowest.
 create view Customer_Value_v as 
 select customerFirstName, customerLastName, sum(count(orderID) * quantity ) as total 
-from customers 
+from CUSTOMER 
 natural join KNOWNCUSTOMER 
 natural join PAYMENT 
 natural join ORDERS 
